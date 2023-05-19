@@ -1,0 +1,13 @@
+SELECT RPAD(last_name || ','|| first_name, 20,'.')  NOMBRE,                            id  ID          
+FROM s_emp          
+WHERE id IN (3,6,7);
+
+--Aquí se proyecta la concatenación " last_name || ','|| first_name" usando 20 espacios, si esa concatenación no ocupa 20 espacios se rellena con puntos. 
+
+--Veamos que obtenemos de salida:  
+
+NOMBRE                                 ID  
+Nagayama Midori.......................  3  
+Urguhart,Molly........................  6  
+Menchu,Roberta........................  7
+
